@@ -1,0 +1,592 @@
+@font-face {
+	font-family: 'MuseoSansCyrl-100';
+	src: url('./fonts/fonts/museosanscyrl-100.eot'); /* IE 9 Compatibility Mode */
+	src: url('./fonts/fonts/museosanscyrl-100.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('./fonts/fonts/museosanscyrl-100.woff2') format('woff2'), /* Super Modern Browsers */
+		url('./fonts/fonts/museosanscyrl-100.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('./fonts/fonts/museosanscyrl-100.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('./fonts/fonts/museosanscyrl-100.svg#museosanscyrl-100') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+@font-face {
+	font-family: 'MuseoSansCyrl-300';
+	src: url('./fonts/fonts/museosanscyrl-300.eot'); /* IE 9 Compatibility Mode */
+	src: url('./fonts/fonts/museosanscyrl-300.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('./fonts/fonts/museosanscyrl-300.woff2') format('woff2'), /* Super Modern Browsers */
+		url('./fonts/fonts/museosanscyrl-300.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('./fonts/fonts/museosanscyrl-300.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('./fonts/fonts/museosanscyrl-300.svg#museosanscyrl-300') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+@font-face {
+	font-family: 'MuseoSansCyrl-700';
+	src: url('./fonts/fonts/museosanscyrl-700.eot'); /* IE 9 Compatibility Mode */
+	src: url('./fonts/fonts/museosanscyrl-700.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('./fonts/fonts/museosanscyrl-700.woff2') format('woff2'), /* Super Modern Browsers */
+		url('./fonts/fonts/museosanscyrl-700.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('./fonts/fonts/museosanscyrl-700.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('./fonts/fonts/museosanscyrl-700.svg#museosanscyrl-700') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+/*------Cброс CSS START--------*/
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+	color: #fff;
+}
+ul,
+ol,
+li {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	font-family: 'MuseoSansCyrl-300', serif;
+}
+a:hover{
+	color:#a7a6a7;
+	font-family: 'MuseoSansCyrl-300', serif;
+	text-decoration: underline;
+}
+/*------Cброс CSS END--------*/
+.circle{
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	position: fixed;
+	top: 68.5%;
+	left: 50%;
+	margin-top: -5px;
+	margin-left: -5px;
+
+	background-color: red;
+}
+/*----------------------PC--------------------------*/
+
+@media(min-width: 1180px) {
+	html,body {
+		height: 100%;
+		background-image: url('./images/background.jpg');
+		background-position: center;
+		background-size:cover;
+		font-family: 'MuseoSansCyrl-100', serif;
+		font-size: 16px;
+		color: #fff;
+		overflow: hidden;
+	}	
+	.container {
+		margin: 0 auto;
+		max-width: 1210px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 0 15px;
+	}
+	/*-------------HEADER START----------------*/	
+	.header-background{
+		position: absolute;
+		height: 100px;
+		width: 100vw;
+		background-color: rgb(0, 0, 0, 30%);;
+		border-bottom: 1px solid rgb(51, 52, 57, 70%);
+		pointer-events: none;
+	}
+	header {
+		font-size: 18px;
+		height: 100px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		border-bottom: 1px solid rgb(53, 52, 56,80%);
+		border-top: 1px solid rgb(53, 52, 56,80%);
+		min-width: fit-content;
+		max-width: 1210px;
+		width: 95vw;
+	}
+	header img {
+		width: 274px;
+		object-position: left top;
+	}
+	header .logo {
+		height: 100px;
+		display: flex;
+		border: 1px solid rgb(51, 52, 57, 70%);
+	cursor: pointer;
+	}
+	header .logo:hover {
+		border-width: 2px;
+		border-style: solid;
+		border-image:  linear-gradient(
+			to right,
+			#fff 3%,
+			rgb(51, 52, 57) 3% 97%,
+			#fff 97%
+		 )1;
+	}
+	/*-------------ССЫЛКИ START----------------*/	
+	.menu {
+		display: flex;
+		min-width: 680px;
+		justify-content: space-between;
+	}
+	/*-------------ССЫЛКИ END----------------*/
+	/*-------------MAIN START----------------*/
+	main {
+		min-width: 1180px;
+		padding: 0 15px;
+	}	
+	.travel-button-container {
+		border-width: 1px;
+		border-style: solid;
+		border-image: linear-gradient(to right bottom, #0a203c, #5780b3, #0a203c) 1;
+	}
+	.travel-button {
+		width: 180px;
+		height: 35px;
+		color: #c0c1c3;
+		background-color: #0f0d17	;
+		cursor: pointer;
+	}
+	.travel-button:hover {
+		border-width: 5px;
+		border-style: solid;
+		border-image:  linear-gradient(
+			to right,
+			#fff 3%,
+			rgb(51, 52, 57) 3% 97%,
+			#fff 97%
+		 )1;	
+		transition: 21s;
+	}
+	/*-------------БЛОКИ С ЧИСЛАМИ START----------------*/
+	.items {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 50px;
+	}
+	.left-items{
+		position: relative;
+		top: 250px;
+	}
+	.right-items {
+		display: flex;
+		width: 380px;
+		flex-wrap: wrap;
+	}
+	.item {
+		width: 185px;
+		height: 185px;
+		margin-bottom: 10px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		cursor: pointer;
+	}
+	.item:nth-child(2n) {
+	margin-left: 10px;
+	}
+	.item:first-child {
+		background: linear-gradient(to left top, rgba(256,256,256,8%), rgba(256,256,256,0%) 50%);
+	}
+	.item:first-child:hover {
+		border-right: 1px solid ;
+		border-bottom: 1px solid ;
+		border-image: linear-gradient(to right bottom, rgba(88,91,98,0%), rgba(53,58,64,0%), rgba(88,91,98)) 1;
+	}
+	.item:nth-child(2) {
+		background: linear-gradient(to right top, rgba(256,256,256,8%)	, rgba(256,256,256,0%)50%);
+	}
+	.item:nth-child(2):hover {
+		border-left: 1px solid ;
+		border-bottom: 1px solid ;
+		border-image: linear-gradient(to left bottom, rgba(88,91,98,0%), rgba(53,58,64,0%), rgba(88,91,98)) 1;
+	}
+	.item:nth-child(3) {
+		background: linear-gradient(to left bottom, rgba(256,256,256,8%)	, rgba(256,256,256,0%)50%);
+	}
+	.item:nth-child(3):hover {
+		border-right: 1px solid ;
+		border-top: 1px solid ;
+		border-image: linear-gradient(to right top, rgba(88,91,98,0%), rgba(53,58,64,0%), rgba(88,91,98)) 1;
+	}
+	.item:last-child {
+		background: linear-gradient(to right bottom, rgba(256,256,256,8%)	, rgba(256,256,256,0%)50%);
+	}
+	.item:last-child:hover {
+		border-left: 1px solid ;
+		border-top: 1px solid ;
+		border-image: linear-gradient(to left top, rgba(88,91,98,0%), rgba(53,58,64,0%), rgba(88,91,98)) 1;
+	}
+	.upper-letter {
+		font-family: 'MuseoSansCyrl-700', serif;
+		font-size: 60px;
+	}
+	/*-------------БЛОКИ С ЧИСЛАМИ END----------------*/
+	/*-------------MAIN END----------------*/
+}	
+	
+
+/*----------------------TABLET--------------------------*/
+
+@media(min-width: 990px) and (max-width: 1179.98px) {
+	html,body {
+		height: 100%;
+		background-image: url('./images/background-tablet-mobile.jpg');
+		background-position: center;
+		background-size:cover;
+		font-family: 'MuseoSansCyrl-100', serif;
+		font-size: 16px;
+		color: #fff;
+		overflow: hidden;
+	}
+	.container {
+		margin: 0 auto;
+		max-width: 1020px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 0 15px;
+	}
+	/*-------------HEADER START----------------*/	
+	.header-background{
+		position: absolute;
+		height: 100px;
+		width: 100vw;
+		background-color: rgb(0, 0, 0, 30%);;
+		border-bottom: 1px solid rgb(51, 52, 57, 70%);
+		pointer-events: none;
+	}
+	header {
+		font-size: 18px;
+		height: 100px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		border-bottom: 1px solid rgb(53, 52, 56,80%);
+		border-top: 1px solid rgb(53, 52, 56,80%);
+		min-width: fit-content;
+		max-width: 990px;
+		width: 95vw;
+	}
+	header img {
+		width: 274px;
+		object-position: left top;
+	}
+	header .logo {
+		height: 100px;
+		display: flex;
+		border: 1px solid rgb(51, 52, 57, 70%);
+		cursor: pointer;
+		margin-right: 15px;
+	}
+	header .logo:hover {
+		border-width: 2px;
+		border-style: solid;
+		border-image:  linear-gradient(
+			to right,
+			#fff 3%,
+			rgb(51, 52, 57) 3% 97%,
+			#fff 97%
+		 )1;
+	}		
+	/*-------------ССЫЛКИ START----------------*/
+	.menu {
+		display: flex;
+		min-width: 680px;
+		justify-content: space-between;
+	}
+	/*-------------ССЫЛКИ END----------------*/
+	/*-------------MAIN START----------------*/
+	main {
+		min-width: 990px;
+		max-width: 1020px;
+	}
+	.travel-button-container {
+		border-width: 1px;
+		border-style: solid;
+		border-image: linear-gradient(to right bottom, #0a203c, #5780b3, #0a203c) 1;
+	}
+	.travel-button {
+		width: 180px;
+		height: 35px;
+		color: #c0c1c3;
+		background-color: #0f0d17	;
+		cursor: pointer;
+	}
+	.travel-button:hover {
+		border-width: 5px;
+		border-style: solid;
+		border-image:  linear-gradient(
+			to right,
+			#fff 3%,
+			rgb(51, 52, 57) 3% 97%,
+			#fff 97%
+		 )1;	
+		transition: 21s;
+	}
+	/*-------------БЛОКИ С ЧИСЛАМИ START----------------*/
+	.items {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 50px;
+		padding: 0 15px;
+	}
+	.left-items{
+		position: relative;
+		top: 250px;
+	}
+	.right-items {
+		display: flex;
+		width: 380px;
+		flex-wrap: wrap;
+	}
+	.item {
+		width: 185px;
+		height: 185px;
+		margin-bottom: 10px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		cursor: pointer;
+	}
+	.item:nth-child(2n) {
+	margin-left: 10px;
+	}
+	.item:first-child {
+		background: linear-gradient(to left top, rgba(256,256,256,8%), rgba(256,256,256,0%) 50%);
+	}
+	.item:first-child:hover {
+		border-right: 1px solid ;
+		border-bottom: 1px solid ;
+		border-image: linear-gradient(to right bottom, rgba(88,91,98,0%), rgba(53,58,64,0%), rgba(88,91,98)) 1;
+	}
+	.item:nth-child(2) {
+		background: linear-gradient(to right top, rgba(256,256,256,8%)	, rgba(256,256,256,0%)50%);
+	}
+	.item:nth-child(2):hover {
+		border-left: 1px solid ;
+		border-bottom: 1px solid ;
+		border-image: linear-gradient(to left bottom, rgba(88,91,98,0%), rgba(53,58,64,0%), rgba(88,91,98)) 1;
+	}
+	.item:nth-child(3) {
+		background: linear-gradient(to left bottom, rgba(256,256,256,8%)	, rgba(256,256,256,0%)50%);
+	}
+	.item:nth-child(3):hover {
+		border-right: 1px solid ;
+		border-top: 1px solid ;
+		border-image: linear-gradient(to right top, rgba(88,91,98,0%), rgba(53,58,64,0%), rgba(88,91,98)) 1;
+	}
+	.item:last-child {
+		background: linear-gradient(to right bottom, rgba(256,256,256,8%)	, rgba(256,256,256,0%)50%);
+	}
+	.item:last-child:hover {
+		border-left: 1px solid ;
+		border-top: 1px solid ;
+		border-image: linear-gradient(to left top, rgba(88,91,98,0%), rgba(53,58,64,0%), rgba(88,91,98)) 1;
+	}
+	.upper-letter {
+		font-family: 'MuseoSansCyrl-700', serif;
+		font-size: 60px;
+	}
+	/*-------------БЛОКИ С ЧИСЛАМИ END----------------*/
+	/*-------------MAIN END----------------*/
+}
+
+/*----------------------Mobile--------------------------*/
+
+@media(min-width:375px) and (max-width: 989.98px) {
+	html,body {
+		height: 100%;
+		background-image: url('./images/background-tablet-mobile.jpg');
+		background-position: center;
+		background-size:cover;
+		font-family: 'MuseoSansCyrl-100', serif;
+		font-size: 16px;
+		color: #fff;
+		overflow: hidden;
+	}
+	.container {
+		margin: 0 auto;
+		max-width: 405px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 0 15px;
+	}
+	/*-------------HEADER START----------------*/
+	.header-background{
+		position: absolute;
+		height: 100px;
+		width: 100vw;
+		background-color: rgb(0, 0, 0, 30%);
+		border-bottom: 1px solid rgb(51, 52, 57, 70%);
+		pointer-events: none;
+	}
+	header {
+		font-size: 18px;
+		height: 100px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		border-bottom: 1px solid rgb(53, 52, 56,80%);
+		border-top: 1px solid rgb(53, 52, 56,80%);
+		min-width: 100vw;
+		max-width: 405px;
+		width: 95vw;
+		padding: 0 15px;
+	}
+	header img {
+		width: 274px;
+		object-position: left top;
+	}
+	header .logo {
+		height: 100px;
+		display: flex;
+		border: 1px solid rgb(51, 52, 57, 70%);
+	cursor: pointer;
+	}
+	header .logo:hover {
+		border-width: 2px;
+		border-style: solid;
+		border-image:  linear-gradient(
+			to right,
+			#fff 3%,
+			rgb(51, 52, 57) 3% 97%,
+			#fff 97%
+		 )1;
+	}
+	/*-------------ССЫЛКИ START----------------*/
+	.menu {
+		position: absolute;
+		right: 15px;
+		min-width: 300px;
+		display: none;
+		flex-direction: column;
+		justify-content: space-between;
+		background-color: rgb(0, 0, 0, 30%);
+		transform: translateY(-150%);
+		transition: transform 0.5s;
+	}
+	.menu.active {
+		position: absolute;
+		right: 15px;
+		min-width: 300px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		background-color: rgb(0, 0, 0, 30%);
+		transform: translateY(20%)
+	}
+	.menu-items {
+		margin: 10px auto;
+	}
+	.burger-menu{
+	position: relative;
+	flex: 0 0 30px;
+	height: 18px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	}
+	.burger-menu::before,
+	.burger-menu::after {
+		content: "";
+		background-color: #fff;
+		height: 2px;
+	}
+	.burger-menu span {
+		height: 2px;
+		background-color: #fff;
+	}
+	/*-------------ССЫЛКИ END----------------*/
+	/*-------------MAIN START----------------*/
+	.travel-button-container {
+		border-width: 1px;
+		border-style: solid;
+		border-image: linear-gradient(to right bottom, #0a203c, #5780b3, #0a203c) 1;
+	}
+	.travel-button {
+		width: 180px;
+		height: 35px;
+		color: #c0c1c3;
+		background-color: #0f0d17	;
+		cursor: pointer;
+	}
+	.travel-button:hover {
+		border-width: 5px;
+		border-style: solid;
+		border-image:  linear-gradient(
+			to right,
+			#fff 3%,
+			rgb(51, 52, 57) 3% 97%,
+			#fff 97%
+		 )1;	
+		transition: 21s;
+	}
+	/*-------------БЛОКИ С ЧИСЛАМИ START----------------*/
+	.items {
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: center;
+		justify-content: space-between;
+		margin-top: 50px;
+	}
+	.right-items {
+		margin-bottom: 5vh;
+		display: flex;
+		width: 380px;
+		flex-wrap: wrap;
+	}
+	.item {
+		width: 185px;
+		height: 185px;
+		margin-bottom: 10px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		cursor: pointer;
+	}	
+	.item:nth-child(2n) {
+	margin-left: 10px;
+	}	
+	.item:first-child {
+		background: linear-gradient(to left top, rgba(256,256,256,8%), rgba(256,256,256,0%) 50%);
+	}
+	.item:first-child:hover {
+		border-right: 1px solid ;
+		border-bottom: 1px solid ;
+		border-image: linear-gradient(to right bottom, rgba(88,91,98,0%), rgba(53,58,64,0%), rgba(88,91,98)) 1;
+	}
+	.item:nth-child(2) {
+		background: linear-gradient(to right top, rgba(256,256,256,8%)	, rgba(256,256,256,0%)50%);
+	}
+	.item:nth-child(2):hover {
+		border-left: 1px solid ;
+		border-bottom: 1px solid ;
+		border-image: linear-gradient(to left bottom, rgba(88,91,98,0%), rgba(53,58,64,0%), rgba(88,91,98)) 1;
+	}
+	.item:nth-child(3) {
+		background: linear-gradient(to left bottom, rgba(256,256,256,8%)	, rgba(256,256,256,0%)50%);
+	}
+	.item:nth-child(3):hover {
+		border-right: 1px solid ;
+		border-top: 1px solid ;
+		border-image: linear-gradient(to right top, rgba(88,91,98,0%), rgba(53,58,64,0%), rgba(88,91,98)) 1;
+	}
+	.item:last-child {
+		background: linear-gradient(to right bottom, rgba(256,256,256,8%)	, rgba(256,256,256,0%)50%);
+	}
+	.item:last-child:hover {
+		border-left: 1px solid ;
+		border-top: 1px solid ;
+		border-image: linear-gradient(to left top, rgba(88,91,98,0%), rgba(53,58,64,0%), rgba(88,91,98)) 1;
+	}
+	.upper-letter {
+		font-family: 'MuseoSansCyrl-700', serif;
+		font-size: 60px;
+	}
+	/*-------------БЛОКИ С ЧИСЛАМИ END----------------*/
+	/*-------------MAIN END----------------*/
+}
